@@ -13,7 +13,7 @@ public class Employer {
     }
 
     public Employer(String value) {
-        this();
+        this(); //assigns a unique id to employer by calling other constructor on line 10
         this.value = value;
     }
 
