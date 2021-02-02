@@ -47,6 +47,59 @@ public class Job {
         return Objects.hash(getId());
     }
 
+//    @Override
+//    public String toString(){
+//        String output = "";
+//        if (name.equals("")){
+//            name = "Data not available";
+//        }
+//        if (employer.getValue().equals("") || employer.getValue() == null){
+//            employer.setValue("Data not available");
+//        }
+//        if (location.getValue().equals("") || location.getValue() == null){
+//            location.setValue("Data not available");
+//        }
+//        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null){
+//            coreCompetency.setValue("Data not available");
+//        }
+//        if (positionType.getValue().equals("") || positionType.getValue() == null){
+//            positionType.setValue("Data not available");
+//        }
+//
+//        output = String.format("\nID: %d\n" +
+//                "Name: %s\n" +
+//                "Employer: %s\n" +
+//                "Location: %s\n" +
+//                "Position Type: %s\n" +
+//                "Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+//        return output;
+//    }
+
+
+    @Override
+    public String toString() {
+        String output = "";
+        if (name.equals("")){
+            name = "Data not available";
+        }
+        if (employer.getValue().equals("") || employer.getValue() == null){
+            employer.setValue("Data not available");
+        }
+        if (location.getValue().equals("") || location.getValue() == null){
+            location.setValue("Data not available");
+        }
+        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null){
+            coreCompetency.setValue("Data not available");
+        }
+        if (positionType.getValue().equals("") || positionType.getValue() == null){
+            positionType.setValue("Data not available");
+        }
+
+        output = "\nID: " + id + "\nName: " + name + "\nEmployer: " + employer + "\nLocation: " + location + "\nPosition Type: " + positionType + "\nCore Competency: " + coreCompetency + "\n";
+        //output = String.format("\nID: %d\n" + "Name: %s\n" + "Employer: %s\n" + "Location: %s\n" + "Position Type: %s\n" +"Core Competency: %s\n", id, name, employer, location, positionType, coreCompetency);
+        return output;
+    }
+
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
