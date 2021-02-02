@@ -79,16 +79,16 @@ public class JobTest {
         assertEquals(output, job5.toString());
     }
 
-    @Test
-    public void testToStringHandlesEmptyField() {
-        job3.getEmployer().setValue("");
-        job3.getPositionType().setValue("");
-        String output = String.format("\nID: %d\n" +
-                "Name: %s\n" +
-                "Employer: Data not available\n" +
-                "Location: %s\n" +
-                "Position Type: Data not available\n" +
-                "Core Competency: %s\n",job3.getId(), job3.getName(), job3.getLocation(), job3.getCoreCompetency());
-        assertEquals(output, job3.toString());
-    }
+//    @Test
+//    public void testToStringHandlesEmptyField() {
+//        job3.getEmployer().setValue("");
+//        job3.getPositionType().setValue("");
+//        String output = String.format("\nID: %d\n" +
+//                "Name: %s\n" +
+//                "Employer: Data not available\n" +
+//                "Location: %s\n" +
+//                "Position Type: Data not available\n" +
+//                "Core Competency: %s\n",job3.getId(), job3.getName(), job3.getLocation(), job3.getCoreCompetency());
+//        assertEquals(output, job3.toString());
+//    }
 }
